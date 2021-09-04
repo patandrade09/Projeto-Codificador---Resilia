@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_.css">
+
+    <title>Cifrando e Decifrando</title>
+</head>
+
+<body>
+    <div>
+        <h2>Vamos decifrar?</h2>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group" id="caixa1">
+                        <label for="campo-entrada">Escreva sua mensagem aqui!</label>
+                        <textarea class="form-control" id="campo-entrada" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="resultado">Resultado:</label>
+                    <textarea class="form-control" id="resultado" type="text" rows="5"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-3">
+                    <label for="selecao-entrada">Selecione o tipo de entrada:</label>
+                    <select class="form-control" id="selecao-entrada" aria-label=".form-select example">
+                        <option value="1">Cifra de César</option>
+                        <option value="2">Base  64</option>
+                    </select>
+                    <div>
+                        <input type="radio" id="codificando" name="selecao" checked>
+                        <label for="codificando">
+                            Codificar
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="decodificando" name="selecao">
+                        <label for="decodificando">
+                            Decodificar
+                        </label>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div id="someDiv">
+                        <label for="selecao-cifra">Escolha a posição da cifra:</label>
+                        <input class="form-control" type="number" id="selecao-cifra" min="1" max="25" placeholder="0">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5"></div>
+                <button id="submeter" type="submit">Faça seu código!</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>
