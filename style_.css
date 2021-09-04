@@ -25,6 +25,7 @@ label {
 
 button {
     font-family: 'Syne Mono', monospace;
+    color: #c795df;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(91, 2, 131, 1) 0%, rgba(180, 5, 203, 0.8690826672465861) 41%, rgba(191, 7, 232, 0.8718837876947654) 100%);
     display: flex;
