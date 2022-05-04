@@ -32,4 +32,5 @@ button {
     align-content: center;
     border-radius: 2em;
     padding: 2em;
+    cursor: pointer;
 }
